@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Blacklegged Tick Surveillance in Toronto's Major Parks.</title>
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- style sheet link --> 
+  <link rel="stylesheet" href="CSS/mystyles.css">  
+</head>
+
+<!-- beginning of the body -->
+<body>
+  
+  <div class="logo"> 
+    <!-- links user to the index.html page when the logo is clicked on. -->
+    <a href="index.html"><img src="images/logowebc.png" alt="logo"></a> 
+  </div>
+  <!-- end of logo -->
+
+  <!-- navigational bar -->
+  <!-- sources: some elements for the nav bar are dervived from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="process.html">Process</a>
+    <a href="solution.html" class="active">Solution</a>
+    <a href="team.html">Team</a>
+    <!-- javascript for the nav bar on smaller screen devices. -->
+    <!-- onlcick executes javascript when the button is clicked. -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div> 
+  <!-- end of navigational bar -->
+ 
+  <!-- header image -->
+  <div class="headerimg">
+  </div>
+  <!-- end of header image -->
+
+
+<!-- beginning of page content -->
+<!-- main -->
+<main>
+<!-- section -->
+<section>
+
+  <!-- solution summary -->
+  <div class="solutions-summary">
+    <h1>SOLUTIONS</h1>
+    <p>Thank you for taking the time to view our website and exploring our journey throughout this project! 
+    We hope that the solutions we’ve developed will aid you in forming a conscious decision on which Toronto parks to take precaution in. 
+    Please navigate the following links below to view our final solutions to our problem, and possible future expansions we may make upon the project.
+    </p>
+  </div>
+    <!-- end of solution summary section -->
+  
+  <!-- solution navigational bar -->
+  <div class="solutionsnav">
+    <a href="#mapbox-solution">Mapbox Maps</a>
+    <a href="#experiencebuilder-solution">ArcGIS Experience Builder</a>
+    <a href="#kobotoolbox-solution">KoboToolBox</a>
+    <a href="#leaflet-solution">Leaflet</a>
+  </div>
+  <!-- end of solution navigational bar -->
+
+<!-- line break -->
+<hr>
+
+  <!-- mapbox map solution section -->
+  <div class="mapbox-solution" id="mapbox-solution">
+    <h1>MAPBOX MAP SOLUTION</h1>
+    <p>Thank you for viewing one of the solutions pertaining to MapBox Studio's Map. 
+    To view the full map, please click <a href="https://api.mapbox.com/styles/v1/aidatuhcic/cl28cdeor000515o8g0gic1pl.html?title=view&access_token=pk.eyJ1IjoiYWlkYXR1aGNpYyIsImEiOiJjbDF4eXdtcTcwN295M2JxZjk0YTNvZTlwIn0.b2YL9KmrQ0gDwj5JAwzQLA&zoomwheel=true&fresh=true#10.41/43.7119/-79.3766">here</a>. 
+     As well, please click <a href="MapboxDocumentation.pdf">here</a>, to review the user's techincal guide. </p>
+    <iframe width='100%' height='400px' src="https://api.mapbox.com/styles/v1/aidatuhcic/cl28cdeor000515o8g0gic1pl.html?title=false&access_token=pk.eyJ1IjoiYWlkYXR1aGNpYyIsImEiOiJjbDF4eXdtcTcwN295M2JxZjk0YTNvZTlwIn0.b2YL9KmrQ0gDwj5JAwzQLA&zoomwheel=false#10.41/43.7119/-79.3766" title="BLT Toronto's Parks " style="border:none;"></iframe>
+   
+	  
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <script src="JS/data2019.js"></script>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <script src="JS/data2018.js"></script>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <script src="JS/data2017.js"></script>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <script src="JS/data2016.js"></script>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <script src="JS/data2015.js"></script>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="Tick locations in 2019">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Tick locations in 2018">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Tick locations in 2017">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Tick locations in 2016">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Tick locations in 2015">
+    </div>
+  </div>
+</div> 
+  </div>
+    </div>
+  <!-- end of mapbox solution section -->
+  
+<!-- line break -->
+<hr>
+
+  <div class="experiencebuilder-solution" id="experiencebuilder-solution">
+    <h1>EXPERIENCE BUILDER SOLUTION</h1>
+    <p>This Esri solution was selected on the basis that it contains the 
+	amendable map centric features like filter the map data or layers which is incorporated in our solution too. 
+	Please <a href="https://experience.arcgis.com/experience/8459f7527e5a4f72bfadb0ea005e2704/page/Home/" target="_blank">click here</a> to view our Experience Builder solution page.</p>
+	  <img src="images/eb.gif" alt="Experience Builder GIF"/>
+  </div>
+  <!-- end of experience builder section -->
+
+<!-- line break -->
+<hr>
+
+  <!-- kobotoolbox solution section -->
+  <div class="kobotoolbox-solution" id="kobotoolbox-solution">
+    <h1>KOBOTOOLBOX SURVEY</h1>
+    <p> A survey form was created to allow users to add the data about the spotted Blacklegged Ticks in the parks of Toronto or rather register a complaint about it.
+      Please <a href="https://ee.kobotoolbox.org/x/WOBixtAL" target="_blank">Click here</a>  to open the Complaint form.</p> 
+	   <img src="images/toolbox.gif" alt="ToolBox"/>
+   
+  </div>
+  <!-- end of kobotoolbox section -->
+
+<!-- line break -->
+<hr>
+
+  <!-- leaflet solution section -->
+  <div class="leaflet-solution" id="leaflet-solution">
+    <h1>LEAFLET SOLUTION</h1>
+    Please <a href="leaflet.html" target="_blank">click here</a> (Open's in new tab!) to visit leaflet solution page.</p>
+	<img src="images/leaflet_gifCompress.gif" alt="Leaflet GIF"/>
+  </div>
+  <!-- end of leaflet section -->
+
+</section>
+</main>
+<!-- end of page content -->
+
+<!-- footer -->
+<footer class="footer">
+    <p>&#169; Web Charlie 2022 &#65073; Fleming College.</p>
+</footer>
+<!-- end of footer -->
+
+<!-- javascript file -->
+<script src="JS/javascript.js"></script>
+
+<!-- end of body -->
+</body>
+<!-- end of html -->
+</html>
